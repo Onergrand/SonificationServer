@@ -1,6 +1,2 @@
-[build]
-builder = "nixpacks"
-nixpacksPkgs = ["libglvnd", "glibc"]
-
-[deploy]
-startCommand = "python app.py"
+[phases.setup]
+aptPkgs = ["libgl1", "libglib2.0-0"]
